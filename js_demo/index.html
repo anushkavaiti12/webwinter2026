@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka | JS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+     <h1> Today, we will learn about JavaScript.</h1>
+
+     <h2><a href="https://www.google.com" target="_blank" onclick="alert ('Warning! You\'re navigating away from my site!')">Search Google</a></p>
+    
+    <h2>How do we use JS to do math?</h2>
+    <p> What is 1+1?</p>
+    <button onclick="document.getElementById('add').innerHTML=1+1"> Click me to find the answer!</button>
+    <p id ="add"></p>
+
+    <h2>How can we change text with JS?</h2>
+    <button onclick="document.getElementById('change-text').innerHTML= 'You did it!'"> Click here for a cool change!</button>
+    <p id ="change-text">This text will change</p>
+
+    <h2>We can also add and time to our pages</h2>
+    <button onclick="document.getElementById('date').innerHTML = Date()">Click me for date and time.</button>
+    <p id="date"></p>
+
+    <h2>How do we make a function with JS?</h2>
+    <p>Let's use a function to add text to our page.</p>
+    <button onclick="pFun()">Click me to run the function!</button>
+    <p id="p-fun"></p>
+
+    <h2>How do we return user data with JS?</h2>
+    <button onclick="askName()">Click me to ask a question </button>
+    <p id="ask-name"></p>
+    
+    <h2>How do we ask other questions with JS?</h2>
+    <button onclick="askQuestion()">Click here for te question of the ages!</button>
+    <p id="question"></p>
+
+     <script>
+        //alert('Hello world!');
+        //alert('Welcome to my website!');
+
+        function pFun() {
+            var p = document.getElementById('p-fun'); 
+            p.innerHTML = 'You just ran a function!';
+            p.style.color='white';
+            p.style.fontSize = '30px';
+            p.style.textAlign = 'center';
+        }
+     </script>
+</body>
+</html> 

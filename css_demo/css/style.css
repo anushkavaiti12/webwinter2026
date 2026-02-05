@@ -1,0 +1,43 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border: 3px solid black;
+}
+
+
+.nav {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+
+.div-test {
+    background-color: lightblue;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+
+.span1 {
+    font-size: 24px;
+    color: darkblue;
+}
+
+.span2 {
+    font-size: 14px;
+    color: darkred;
+}
