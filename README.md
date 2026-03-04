@@ -8,5 +8,5 @@ These are all my projects from 8th grade WEB class.
   <li><a href="js_demo">JS Demo</a></li>
   <li><a href="Midterm">Midterm</a></li>
   <li><a href="magic_8_ball">Magic 8 Ball</a></li>
-  <li><a href="final">Final</a></li>
+  <li><a href="css_demo">Final</a></li>
 </ul>
