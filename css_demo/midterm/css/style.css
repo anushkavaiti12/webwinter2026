@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: navy;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+.container {
+    padding: 20px;
+}
+
+.box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: blue;
+    font-weight: bold;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.player-card {
+  background-color: transparent;
+  width: 200px;
+  height: 260px;
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.player-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+}
+
+.player-card:hover .player-card-inner {
+  transform: rotateY(180deg);
+}
+
+.player-card-front, .player-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.player-card-front img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.player-card-back {
+  background: linear-gradient(lightblue, white);
+  color: navy;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.box {
+    background: linear-gradient(lightblue, white); 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease; 
+}
+
+.box:hover {
+    box-shadow: 0 8px 20px gray; /* horizontal 0, vertical 8px, blur 20px, color gray */
+}
+    
